@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form class="formulario">
+        <h2>Cadastro</h2>
+
+        <label for="nome ">Nome Completo</label>
+        <input type="text" class="campo" placeholder="Digite seu nome " required />
+
+        <label for="email">E-mail</label>
+        <input type="email" class="campo" placeholder="exemplo@email.com" required />
+
+        <label for="senha">Senha</label>
+        <input type="password" class="campo" placeholder="Digite a senha" required/>
+
+        <label>Data de nascimento</label>
+        <input type="date " class="campo" required />
+
+        <label> Você aceita os termos? </label>
+        <div class="radio-group">
+            <input type="radio" id="aceito" name="termos" value="sim">
+            <label for="aceito"> Sim</label>
+            <input type="radio" id="nao-aceito" name="termos" value="nao">
+            <label for="nao aceito">Não</label>
+        </div>
+        <label for="origem">Como você conheceu o site?</label>
+        <select id="origem" class="campo">
+            <option value="">selecione</option>
+            <option value="Instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="linkedin">Linkedin</option>
+        </select>
+
+        <button type="submit" class="botao">Cadastrar</button>
+    </form>
+</body>
+</html>
